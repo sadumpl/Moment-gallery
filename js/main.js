@@ -1,0 +1,1 @@
+document.getElementById('contacts').insertAdjacentHTML('beforeend', new Date().getFullYear());

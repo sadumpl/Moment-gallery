@@ -1,0 +1,198 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+header,
+footer,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+body {
+	position: relative;
+	font-family: cursive;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header,
+.footer {
+	display: block;
+	height: 100px;
+	color: #000;
+	background-color: #fff;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+.footer {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	position: relative;
+	top: 0;
+	right: 0; 
+}
+
+a:before {
+	content: '';
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	transition: 0.2s;
+	transform: scaleX(0);
+	border: 1px solid #fff;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.main a:before {
+	background-color: #fff;
+}
+
+.header a:before,
+.footer a:before {
+	border: 1px solid #000;
+}
+
+a:hover:before {
+	transform: scaleX(1);
+}
+
+.header a,
+.footer a {
+	color: #000;
+}
+
+.main {
+	height: 100%;
+	margin: 100px 0 0 0;
+	background-color: #000;
+	color: #fff;
+	flex: 1 1 auto;
+}
+
+.header__title {
+	width: 137px;
+	margin: 35px auto;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+
+.welcome {
+	width: 470px;
+	padding: 20px;
+	border: 3px dashed #fff;
+	margin: 30px auto 0;
+	text-align: center;
+}
+
+.welcome p {
+	font-size: 18px;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 15px 120px;
+	
+}
+
+.gallery img {
+	height: 200px;
+	border: 2px solid #fff;
+	margin: 15px;
+	transition: 0.2s;
+}
+
+.gallery img:hover {
+	transform: scale(1.75);
+}
+
+.on-main-page:hover:before,
+.frog-link:hover:before {
+	transform: scaleX(0);
+}
+
+.footer__info {
+	width: 100%;
+	height: 100px;
+}
+
+.footer__brand {
+	width: 192px;
+	margin: 35px;
+	float: left;
+}
+
+#frog {
+	height: 29px;
+	opacity: 0;
+}
+
+#frog:hover {
+	opacity: 1;
+}
+
+.footer__contacts {
+	font-size: 18px;
+	margin: 41px;
+	text-align: center;
+	float: right;
+}
