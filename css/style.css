@@ -49,6 +49,7 @@ textarea {
 
 body {
 	position: relative;
+	font-family: 'Shantell Sans', cursive;
 }
 
 .wrapper {
@@ -147,10 +148,9 @@ h1 {
 
 .gallery {
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin: 15px 120px;
-	
 }
 
 .gallery img {
